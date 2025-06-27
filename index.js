@@ -2,11 +2,11 @@ const express = require('express');
 const cors = require('cors');
 require('dotenv').config(); // Loads environment variables from .env file
 
-const authRoutes = require('./routes/authRoutes');  // Import authentication routes
-const appointmentRoutes = require("./routes/appointmentRoutes");
-const availabilityRoutes = require("./routes/availabilityRoutes");
-const userRoutes = require("./routes/authRoutes");
-const slotRoutes = require("./routes/availabilityRoutes");
+const authRoutes = require('./src/routes/authRoutes');  // Import authentication routes
+const appointmentRoutes = require("./src/routes/appointmentRoutes");
+const availabilityRoutes = require("./src/routes/availabilityRoutes");
+const userRoutes = require("./src/routes/authRoutes");
+const slotRoutes = require("./src/routes/availabilityRoutes");
 const sequelize = require('./db/pool');          // Database connection
 
 const app = express();
