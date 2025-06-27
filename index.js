@@ -7,7 +7,7 @@ const appointmentRoutes = require("./src/routes/appointmentRoutes");
 const availabilityRoutes = require("./src/routes/availabilityRoutes");
 const userRoutes = require("./src/routes/authRoutes");
 const slotRoutes = require("./src/routes/availabilityRoutes");
-const sequelize = require('./db/pool');          // Database connection
+const sequelize = require('./src/db/pool');          // Database connection
 
 const app = express();
 
